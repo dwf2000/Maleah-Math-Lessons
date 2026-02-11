@@ -79,7 +79,7 @@ const Example1 = () => (
     <CardContent>
       <p className="problem-text">Find the composite area of the shaded region. Use 3.14 for π.</p>
       <div className="diagram-container">
-        <svg viewBox="0 0 200 200" className="example-svg">
+        <svg viewBox="0 0 200 200" width="200" height="200" className="example-svg">
           {/* Grid lines */}
           {[...Array(10)].map((_, i) => (
             <g key={i}>
@@ -131,7 +131,7 @@ const Example2 = () => (
     <CardContent>
       <p className="problem-text">Find the area of the figure that consists of a rectangle with a semicircle on top. Use 3.14 for π.</p>
       <div className="diagram-container">
-        <svg viewBox="0 0 160 200" className="example-svg">
+        <svg viewBox="0 0 160 200" width="160" height="200" className="example-svg">
           {/* Rectangle */}
           <rect x="40" y="80" width="80" height="80" fill="rgba(157, 78, 221, 0.3)" stroke="#9d4edd" strokeWidth="2" />
           {/* Semicircle on top */}
@@ -177,7 +177,7 @@ const Example3 = () => (
     <CardContent>
       <p className="problem-text">Find the area of the shaded region (the blue triangle inside the square).</p>
       <div className="diagram-container">
-        <svg viewBox="0 0 200 200" className="example-svg">
+        <svg viewBox="0 0 200 200" width="200" height="200" className="example-svg">
           {/* Square */}
           <rect x="40" y="40" width="120" height="120" fill="#fef7ff" stroke="#3c096c" strokeWidth="2" />
           {/* Blue shaded triangle */}
@@ -240,7 +240,7 @@ const Exercise1 = () => (
     <CardContent>
       <p className="problem-text">A yard is shown with the shaded section indicating grassy areas and the unshaded sections indicating paved areas. Find the area of the space covered with grass in units².</p>
       <div className="diagram-container">
-        <svg viewBox="0 0 240 180" className="example-svg">
+        <svg viewBox="0 0 240 180" width="240" height="180" className="example-svg">
           {/* Grid */}
           {[...Array(12)].map((_, i) => (
             <g key={i}>
@@ -292,7 +292,7 @@ const Exercise2 = () => (
     <CardContent>
       <p className="problem-text">Find the area of the shaded region. Use 3.14 for π.</p>
       <div className="diagram-container">
-        <svg viewBox="0 0 240 120" className="example-svg">
+        <svg viewBox="0 0 240 120" width="240" height="120" className="example-svg">
           {/* Triangle */}
           <polygon points="20,100 140,100 140,20" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
           {/* Semicircle */}
@@ -338,7 +338,7 @@ const Exercise3 = () => (
     <CardContent>
       <p className="problem-text">Find the area of the shaded region. The figure is not drawn to scale.</p>
       <div className="diagram-container">
-        <svg viewBox="0 0 200 120" className="example-svg">
+        <svg viewBox="0 0 200 120" width="200" height="120" className="example-svg">
           {/* Left square */}
           <rect x="20" y="40" width="40" height="40" fill="#fef7ff" stroke="#3c096c" strokeWidth="2" />
           {/* Right square */}
@@ -511,7 +511,7 @@ const Lesson20Practice = () => (
         <CardContent>
           <p className="problem-text">Find the composite area of the shaded region (the blue ring). The outer circle has radius 5 cm and the inner circle has radius 3 cm. Use 3.14 for π.</p>
           <div className="problem-diagram">
-            <svg viewBox="0 0 160 160" className="practice-svg">
+            <svg viewBox="0 0 160 160" width="160" height="160" className="practice-svg">
               <circle cx="80" cy="80" r="70" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
               <circle cx="80" cy="80" r="42" fill="#fef7ff" stroke="#7b2cbf" strokeWidth="2" />
               <line x1="80" y1="80" x2="150" y2="80" stroke="#3c096c" strokeWidth="2" strokeDasharray="4,2" />
@@ -547,7 +547,7 @@ const Lesson20Practice = () => (
         <CardContent>
           <p className="problem-text">Find the area of a figure consisting of a rectangle with a semicircle on top. The rectangle is 6m wide and 4m tall. Use 3.14 for π.</p>
           <div className="problem-diagram">
-            <svg viewBox="0 0 140 160" className="practice-svg">
+            <svg viewBox="0 0 140 160" width="140" height="160" className="practice-svg">
               <rect x="20" y="60" width="100" height="60" fill="rgba(157, 78, 221, 0.3)" stroke="#9d4edd" strokeWidth="2" />
               <path d="M 20 60 A 50 50 0 0 1 120 60 Z" fill="rgba(157, 78, 221, 0.3)" stroke="#9d4edd" strokeWidth="2" />
               <text x="70" y="135" textAnchor="middle" fill="#3c096c" fontSize="10">6 m</text>
@@ -583,7 +583,7 @@ const Lesson20Practice = () => (
         <CardContent>
           <p className="problem-text">Find the area of a shaded region consisting of a triangle with base 10 cm and height 6 cm, attached to a semicircle with diameter 6 cm. Use 3.14 for π.</p>
           <div className="problem-diagram">
-            <svg viewBox="0 0 200 100" className="practice-svg">
+            <svg viewBox="0 0 200 100" width="200" height="100" className="practice-svg">
               <polygon points="10,80 100,80 100,20" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
               <path d="M 100 80 A 30 30 0 0 0 160 80 Z" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
               <text x="55" y="75" textAnchor="middle" fill="#3c096c" fontSize="9">10 cm</text>
@@ -619,7 +619,7 @@ const Lesson20Practice = () => (
         <CardContent>
           <p className="problem-text">Find the area of the shaded region in a square with side 10 cm, where an unshaded triangle is cut out from one corner with base 6 cm and height 5 cm.</p>
           <div className="problem-diagram">
-            <svg viewBox="0 0 140 140" className="practice-svg">
+            <svg viewBox="0 0 140 140" width="140" height="140" className="practice-svg">
               <rect x="20" y="20" width="100" height="100" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
               <polygon points="20,120 80,120 20,60" fill="#fef7ff" stroke="#3c096c" strokeWidth="2" strokeDasharray="3,3" />
               <text x="70" y="135" textAnchor="middle" fill="#3c096c" fontSize="10">10 cm</text>
@@ -663,7 +663,7 @@ const Lesson20Quiz = () => {
       id: 1,
       question: "Find the area of the shaded region. The figure shows a circle with a smaller circle cut out. The large circle has diameter 16 cm (radius 8 cm) and the small circle has diameter 8 cm (radius 4 cm). Use 3.14 for π.",
       diagram: (
-        <svg viewBox="0 0 160 160" className="quiz-svg">
+        <svg viewBox="0 0 160 160" width="160" height="160" className="quiz-svg">
           <circle cx="80" cy="80" r="60" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
           <circle cx="110" cy="80" r="30" fill="#fef7ff" stroke="#7b2cbf" strokeWidth="2" />
           <line x1="80" y1="80" x2="140" y2="80" stroke="#3c096c" strokeWidth="2" strokeDasharray="4,2" />
@@ -680,7 +680,7 @@ const Lesson20Quiz = () => {
       id: 2,
       question: "The figure shows two semicircles. Find the area of the shaded region. The large semicircle has diameter 12 cm (radius 6 cm) and the small semicircle has diameter 6 cm (radius 3 cm). Use 3.14 for π.",
       diagram: (
-        <svg viewBox="0 0 180 100" className="quiz-svg">
+        <svg viewBox="0 0 180 100" width="180" height="100" className="quiz-svg">
           <path d="M 10 80 A 60 60 0 0 1 130 80 Z" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
           <path d="M 70 80 A 30 30 0 0 0 130 80 Z" fill="#fef7ff" stroke="#7b2cbf" strokeWidth="2" />
           <line x1="10" y1="80" x2="130" y2="80" stroke="#3c096c" strokeWidth="2" />
@@ -696,7 +696,7 @@ const Lesson20Quiz = () => {
       id: 3,
       question: "The figure shows a semicircle and a square. Find the area of the shaded region. The square has side 24 cm and the semicircle has diameter 24 cm (radius 12 cm). Use 3.14 for π.",
       diagram: (
-        <svg viewBox="0 0 140 140" className="quiz-svg">
+        <svg viewBox="0 0 140 140" width="140" height="140" className="quiz-svg">
           <rect x="20" y="20" width="100" height="100" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
           <path d="M 20 20 A 50 50 0 0 0 20 120 Z" fill="#fef7ff" stroke="#7b2cbf" strokeWidth="2" />
         </svg>
@@ -711,7 +711,7 @@ const Lesson20Quiz = () => {
       id: 4,
       question: "The figure shows two semicircles and a quarter of a circle (forming a heart shape). Find the area of the shaded region. Each semicircle has diameter 10 cm (radius 5 cm). Use 3.14 for π.",
       diagram: (
-        <svg viewBox="0 0 140 120" className="quiz-svg">
+        <svg viewBox="0 0 140 120" width="140" height="120" className="quiz-svg">
           <path d="M 30 60 A 30 30 0 0 0 70 60 Z" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
           <path d="M 70 60 A 30 30 0 0 0 110 60 Z" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
           <path d="M 30 60 L 70 100 L 110 60" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
@@ -727,7 +727,7 @@ const Lesson20Quiz = () => {
       id: 5,
       question: "Find the area of the shaded region in the complex figure. The outer shape is a rectangle 12 cm × 21 cm with a triangle cut out (base 7 cm, height 13 cm).",
       diagram: (
-        <svg viewBox="0 0 160 200" className="quiz-svg">
+        <svg viewBox="0 0 160 200" width="160" height="200" className="quiz-svg">
           <rect x="30" y="20" width="100" height="160" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
           <polygon points="30,180 100,60 130,180" fill="#fef7ff" stroke="#3c096c" strokeWidth="2" strokeDasharray="3,3" />
           <text x="80" y="195" textAnchor="middle" fill="#3c096c" fontSize="9">12 cm</text>
@@ -744,7 +744,7 @@ const Lesson20Quiz = () => {
       id: 6,
       question: "Find the area of the X-shaped shaded region. The X is made of two rectangles, each 5 cm × 16 cm, overlapping in the middle (4 cm × 4 cm square).",
       diagram: (
-        <svg viewBox="0 0 160 160" className="quiz-svg">
+        <svg viewBox="0 0 160 160" width="160" height="160" className="quiz-svg">
           <rect x="70" y="10" width="20" height="140" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
           <rect x="10" y="70" width="140" height="20" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
         </svg>
@@ -759,7 +759,7 @@ const Lesson20Quiz = () => {
       id: 7,
       question: "The figure is a rectangle made out of triangles. Find the area of the shaded region. The rectangle is 24 cm × 21 cm. The shaded regions are two triangles.",
       diagram: (
-        <svg viewBox="0 0 200 160" className="quiz-svg">
+        <svg viewBox="0 0 200 160" width="200" height="160" className="quiz-svg">
           <rect x="20" y="20" width="160" height="120" fill="#fef7ff" stroke="#3c096c" strokeWidth="2" />
           <polygon points="20,20 180,20 20,80" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
           <polygon points="100,140 180,140 180,20" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
@@ -776,7 +776,7 @@ const Lesson20Quiz = () => {
       id: 8,
       question: "The figure consists of a right triangle and an eighth of a circle. Find the area of the shaded region. The triangle has legs of 14 cm each, and the circular sector has radius 14 cm. Use 22/7 for π.",
       diagram: (
-        <svg viewBox="0 0 140 140" className="quiz-svg">
+        <svg viewBox="0 0 140 140" width="140" height="140" className="quiz-svg">
           <polygon points="20,120 120,120 20,20" fill="#fef7ff" stroke="#3c096c" strokeWidth="2" />
           <path d="M 20 20 L 120 120 A 100 100 0 0 0 20 120 Z" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
         </svg>
@@ -791,7 +791,7 @@ const Lesson20Quiz = () => {
       id: 9,
       question: "a) Find the area of the shaded region (X shape made of two crossing rectangles). Each rectangle is 5 cm × 16 cm with 4 cm × 4 cm overlap.",
       diagram: (
-        <svg viewBox="0 0 160 160" className="quiz-svg">
+        <svg viewBox="0 0 160 160" width="160" height="160" className="quiz-svg">
           <rect x="70" y="10" width="20" height="140" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
           <rect x="10" y="70" width="140" height="20" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
         </svg>
@@ -806,7 +806,7 @@ const Lesson20Quiz = () => {
       id: 10,
       question: "The figure is a rectangle made out of triangles. Find the area of the shaded region. Rectangle is 24 cm × 21 cm.",
       diagram: (
-        <svg viewBox="0 0 200 160" className="quiz-svg">
+        <svg viewBox="0 0 200 160" width="200" height="160" className="quiz-svg">
           <rect x="20" y="20" width="160" height="120" fill="#fef7ff" stroke="#3c096c" strokeWidth="2" />
           <polygon points="20,20 180,20 20,80" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
           <polygon points="100,140 180,140 180,20" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
@@ -822,7 +822,7 @@ const Lesson20Quiz = () => {
       id: 11,
       question: "Find the area of the shaded region. The figure consists of a right triangle (legs 14 cm) minus an eighth of a circle (radius 14 cm). Use 22/7 for π.",
       diagram: (
-        <svg viewBox="0 0 140 140" className="quiz-svg">
+        <svg viewBox="0 0 140 140" width="140" height="140" className="quiz-svg">
           <polygon points="20,120 120,120 20,20" fill="#fef7ff" stroke="#3c096c" strokeWidth="2" />
           <path d="M 20 20 L 120 120 A 100 100 0 0 0 20 120 Z" fill="rgba(157, 78, 221, 0.4)" stroke="#9d4edd" strokeWidth="2" />
           <text x="70" y="135" textAnchor="middle" fill="#3c096c" fontSize="9">14 cm</text>
@@ -869,6 +869,44 @@ const Lesson20Quiz = () => {
     }
   }
 
+  const [showAnswerKey, setShowAnswerKey] = useState(false)
+
+  if (showAnswerKey) {
+    return (
+      <div className="answer-key">
+        <h2 className="answer-key-title">📚 Answer Key: Composite Area</h2>
+        <p className="answer-key-subtitle">All questions with step-by-step solutions</p>
+        <div className="answer-key-content">
+          {questions.map((q) => (
+            <Card key={q.id} className="answer-key-card">
+              <CardHeader>
+                <CardTitle className="answer-key-question">Question {q.id}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="answer-key-text">{q.question}</p>
+                <div className="answer-key-diagram">{q.diagram}</div>
+                <div className="answer-key-solution">
+                  <p className="answer-key-answer"><strong>Answer: {q.answer} {q.unit}</strong></p>
+                  <div className="answer-key-steps">
+                    <p><strong>Solution:</strong></p>
+                    <ol>
+                      {q.steps.map((step, i) => (
+                        <li key={i} className="answer-step">{step}</li>
+                      ))}
+                    </ol>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+        <Button onClick={() => setShowAnswerKey(false)} className="back-to-results-button">
+          <ArrowLeft className="mr-2" />Back to Results
+        </Button>
+      </div>
+    )
+  }
+
   if (quizComplete) {
     return (
       <div className="quiz-complete">
@@ -880,9 +918,14 @@ const Lesson20Quiz = () => {
             <Star key={i} className={`star ${i < Math.ceil((score / questions.length) * 5) ? 'filled' : ''}`} />
           ))}
         </div>
-        <Button onClick={() => {setCurrentQuestion(0); setAnswers(Array(11).fill(null)); setScore(0); setQuizComplete(false)}} className="retry-button">
-          <RotateCcw className="mr-2" />Try Again
-        </Button>
+        <div className="quiz-complete-buttons">
+          <Button onClick={() => setShowAnswerKey(true)} className="answer-key-button">
+            <BookOpen className="mr-2" />View Answer Key
+          </Button>
+          <Button onClick={() => {setCurrentQuestion(0); setAnswers(Array(11).fill(null)); setScore(0); setQuizComplete(false)}} className="retry-button">
+            <RotateCcw className="mr-2" />Try Again
+          </Button>
+        </div>
       </div>
     )
   }
@@ -1139,6 +1182,43 @@ const Lesson21Quiz = () => {
     }
   }
 
+  const [showAnswerKey, setShowAnswerKey] = useState(false)
+
+  if (showAnswerKey) {
+    return (
+      <div className="answer-key">
+        <h2 className="answer-key-title">📚 Answer Key: Surface Area</h2>
+        <p className="answer-key-subtitle">All questions with step-by-step solutions</p>
+        <div className="answer-key-content">
+          {questions.map((q) => (
+            <Card key={q.id} className="answer-key-card">
+              <CardHeader>
+                <CardTitle className="answer-key-question">Question {q.id}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="answer-key-text">{q.question}</p>
+                <div className="answer-key-solution">
+                  <p className="answer-key-answer"><strong>Answer: {q.answer} {q.unit}</strong></p>
+                  <div className="answer-key-steps">
+                    <p><strong>Solution:</strong></p>
+                    <ol>
+                      {q.steps.map((step, i) => (
+                        <li key={i} className="answer-step">{step}</li>
+                      ))}
+                    </ol>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+        <Button onClick={() => setShowAnswerKey(false)} className="back-to-results-button">
+          <ArrowLeft className="mr-2" />Back to Results
+        </Button>
+      </div>
+    )
+  }
+
   if (quizComplete) {
     return (
       <div className="quiz-complete">
@@ -1150,9 +1230,14 @@ const Lesson21Quiz = () => {
             <Star key={i} className={`star ${i < Math.ceil((score / questions.length) * 5) ? 'filled' : ''}`} />
           ))}
         </div>
-        <Button onClick={() => {setCurrentQuestion(0); setAnswers(Array(5).fill(null)); setScore(0); setQuizComplete(false)}} className="retry-button">
-          <RotateCcw className="mr-2" />Try Again
-        </Button>
+        <div className="quiz-complete-buttons">
+          <Button onClick={() => setShowAnswerKey(true)} className="answer-key-button">
+            <BookOpen className="mr-2" />View Answer Key
+          </Button>
+          <Button onClick={() => {setCurrentQuestion(0); setAnswers(Array(5).fill(null)); setScore(0); setQuizComplete(false)}} className="retry-button">
+            <RotateCcw className="mr-2" />Try Again
+          </Button>
+        </div>
       </div>
     )
   }
@@ -1230,7 +1315,7 @@ const OpeningExercise = () => (
       <p className="problem-text">On the provided grid, draw a net representing the surfaces of the right rectangular prism. Then, find the surface area of the prism by finding the area of the net. (Assume each grid line represents 1 inch.)</p>
       <p className="problem-text">The prism has dimensions: 3 in × 4 in × 6 in</p>
       <div className="diagram-container">
-        <svg viewBox="0 0 280 200" className="example-svg">
+        <svg viewBox="0 0 280 200" width="280" height="200" className="example-svg">
           {/* Grid */}
           {[...Array(14)].map((_, i) => (
             <g key={i}>
@@ -1292,7 +1377,7 @@ const VocabularySection = () => (
           <h4>Right Prism</h4>
           <p>A solid with two parallel, congruent polygonal bases and rectangular lateral faces that are perpendicular to the bases.</p>
           <div className="vocab-diagram">
-            <svg viewBox="0 0 100 80" className="vocab-svg">
+            <svg viewBox="0 0 100 80" width="100" height="80" className="vocab-svg">
               <rect x="20" y="30" width="40" height="40" fill="rgba(157, 78, 221, 0.3)" stroke="#9d4edd" strokeWidth="2" />
               <polygon points="20,30 30,20 70,20 60,30" fill="rgba(157, 78, 221, 0.2)" stroke="#9d4edd" strokeWidth="2" />
               <polygon points="60,30 70,20 70,60 60,70" fill="rgba(157, 78, 221, 0.15)" stroke="#9d4edd" strokeWidth="2" />
@@ -1304,7 +1389,7 @@ const VocabularySection = () => (
           <h4>Cube</h4>
           <p>A cube is a right rectangular prism all of whose edges are of equal length.</p>
           <div className="vocab-diagram">
-            <svg viewBox="0 0 80 80" className="vocab-svg">
+            <svg viewBox="0 0 80 80" width="80" height="80" className="vocab-svg">
               <rect x="20" y="30" width="30" height="30" fill="rgba(123, 220, 181, 0.4)" stroke="#7bdcb5" strokeWidth="2" />
               <polygon points="20,30 35,15 65,15 50,30" fill="rgba(123, 220, 181, 0.3)" stroke="#7bdcb5" strokeWidth="2" />
               <polygon points="50,30 65,15 65,45 50,60" fill="rgba(123, 220, 181, 0.2)" stroke="#7bdcb5" strokeWidth="2" />
